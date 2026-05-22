@@ -88,15 +88,15 @@
 
 # 3D list
 
-room = [[[False for rooms in range(20)]for flor in range(15)]for bulding in range(3)]
-room[1][9][13] = True
-room[0][4][1] = True
-vacancy = 0
+# room = [[[False for rooms in range(20)]for flor in range(15)]for bulding in range(3)]
+# room[1][9][13] = True
+# room[0][4][1] = True
+# vacancy = 0
 
-for room_num in range(20):
-    if not room[1][9][room_num]:
-        vacancy += 1
+# for room_num in range(20):
+#     if not room[1][9][room_num]:
+#         vacancy += 1
 
-for element in room:
-    print(element)
-print(f"Vacany in 3rd building of 15 floor is {vacancy}")
+# for element in room:
+#     print(element)
+# print(f"Vacany in 3rd building of 15 floor is {vacancy}")
