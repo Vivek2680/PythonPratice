@@ -99,4 +99,180 @@
 
 # for element in room:
 #     print(element)
-# print(f"Vacany in 3rd building of 15 floor is {vacancy}")
+# print(f"Vacany in 2rd building of 10 floor is {vacancy}")
+# var = 1
+# while var< 10:
+#     print("#")
+#     var = var <<1
+# val = [1,2,3]
+# new = val[-1:-2]
+# print(new)
+
+# a = [1, 2]
+# b = [3, 4]
+# c = a + b
+# print(c)
+# my_list= [1,2,3]
+# for i in range(len(my_list)):
+#     my_list.insert(1,my_list[my_list[my_list[i]]])
+#     # print(my_list)
+# print (my_list)
+
+# nums = [1, 2, 3, 4]
+
+# result = []
+
+# for n in nums:
+#     if n % 2 == 0:
+#         result.append(n * 2)
+
+# print(result)
+
+# x = [1, 2, 3]
+
+# y = [i + 1 for i in x]
+
+# print(x)
+# print(y)
+
+# a = [1, 2, 3, 4]
+
+# b = [i for i in a if i > 2]
+
+# print(b)
+
+# nums = [2, 4, 6]
+
+# result = [n if n > 3 else 0 for n in nums]
+
+# print(result)
+# x=[i for i in range(3)]
+# print(x)
+# name = ["ram","shyam","mohan"]
+# upper_name = [n.upper() for n in name]
+# print(upper_name)
+
+# a=(i for i in range(5))
+# print(a)
+
+# square = [n**2 for n in range(1,6)]
+# print(square)
+
+# cube = [n**2 for n in range(1,21) if n % 3 == 0]
+# print(cube)
+# a= [1,2,3,4,5]
+# for element in a:
+#     print(element)
+
+# num = [[n for n in range(3)] for r in range(3)]
+# print(num)
+
+# nums = [5, 12, 17, 20, 25, 30]
+# new_num = []
+# for element in nums:
+#     if element % 5 == 0 and element > 15:
+#         new_num.append(element)
+# print(new_num)
+# new_num = [element for element in nums if element % 5 == 0 and element > 15]
+# print(new_num)
+
+# nums = [1,2,3,4,5,6]
+# new_num = []
+# for element in nums:
+#     if element % 2 == 0:
+#         new_num.append(element*10)
+#     else:
+#         new_num.append(element)
+# print(new_num)
+# new_num = [element*10 if element % 2 ==0 else element for element in nums]
+# print(new_num)
+
+# nums = [10,20,30,40]
+
+# result = [nums[i] for i in range(len(nums)-1, -1, -1)]
+
+# print(result)
+
+# nums = [1,2,3]
+
+# for i in nums:
+#     nums.append(i)
+
+#     if len(nums) > 6:
+#         break
+
+# print(nums)
+# word = "python"
+# my_list = [ch.upper() for ch in word]
+# print(my_list)
+
+# pairs = []
+
+# for i in range(3):
+#     for j in range(2):
+#         pairs.append((i, j))
+
+# print(pairs)
+
+# nums = [1,2,3,4,5]
+# new_num = [ 'even' if element % 2 == 0 else 'odd' for element in nums]
+# print(new_num)
+# new_num = []
+# for element in nums:
+#     if element % 2 == 0:
+#         new_num.append('even')
+#     else:
+#         new_num.append('odd')
+# print(new_num)
+
+# names = ["ram", "shyam", "mohan", "riya", "amit"]
+# # new_name = [ch for ch in names if len(ch) > 4]
+# new_name = []
+# for ch in names:
+#     if len(ch) > 4:
+#         new_name.append(ch)
+# print(new_name)
+
+# result = []
+
+# for ch in "python":
+#     if ch != "o":
+#         result.append(ch.upper())
+# print(result)
+
+# result = [ch.upper()for ch in "python" if ch != "o"]
+# print(result)
+
+# result = [n**2 for n in range (1,21) if n % 2 == 0 and n % 3 == 0]
+# print(result)
+
+# matrix = [[0]*3]*2
+# matrix[0][1] = 5
+# print(matrix)
+
+# num = [n for n in range(5,0,-1)]
+# print(num)
+
+# vals = [(i, j, k)
+#         for i in range(2)
+#         for j in range(3)
+#         for k in range(4)]
+
+# for element in vals:
+#     print(element)
+
+# nums = iter([1,2,3])
+
+# print(next(nums))
+# print(next(nums))
+
+# for i in nums:
+#     print(i)
+# num = [n**2 for n in range(0,21,2) if n % 2 == 0 ]
+# print(num)
+
+# num = []
+# new_num = [num.append(i) for i in range (3)]
+# print(num)
+# print(new_num)
+
