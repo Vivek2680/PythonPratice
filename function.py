@@ -96,10 +96,41 @@
 #TypeError: 'int' object is not iterable
 
 # def my_list_fun(n):
-#     lst = [i for i in range (20,-1,-1)]
+#     lst = [n for n in range (20,-1,-1)]
 #     # for itretor in range(20,0,-1):
 #     #     lst.append(itretor)
 #     return lst
 # print(my_list_fun(10))
 
+# x = [1]
+# x.append(x)
+# print(x)
+# print(x[1])
+# print(x[1][1][1][0])
 
+# nums = [2, 4, 6]
+
+# result = [n if n > 3 else n < 5  for n in nums]
+
+# print(result)
+
+x = [[1], [2]]
+
+y = x[:]
+
+y[0].append(99)
+
+
+print(x)
+print(y)
+print(x is y)
+print(x[0] is y[0])
+
+# a = [1, 2]
+# b = a
+
+# b += [3]
+
+# print(a)
+# print(b)
+# print(a is b)

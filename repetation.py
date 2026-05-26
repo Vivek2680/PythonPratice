@@ -276,3 +276,60 @@
 # print(num)
 # print(new_num)
 
+# a = [[0]*2]*3
+
+# for row in a:
+#     row.append(len(row))
+
+# print(a)
+
+# a = [[] for _ in range(3)]
+
+# b = a[:]
+
+# b[0].append(1)
+
+# b[1] = [99]
+
+# print(a)
+# print(b)
+# print(a[0] is b[0])
+# print(a[1] is b[1])
+
+# a = [[1], [2], [3]]
+
+# b = a[:]
+
+# for row in b:
+#     row += [99]
+# print(a)
+# print(b)
+
+# matrix = [[i+j for j in range(2)] for i in range(3)]
+
+# copy_matrix = matrix[:]
+
+# copy_matrix[1][0] = 999
+
+# print(matrix)
+# print(copy_matrix)
+
+# data = [[1], [2], [3]]
+
+# new = [row for row in data]
+
+# new[1].append(100)
+
+# print(data)
+# print(new)
+
+# def show():
+#     x =123
+# show ()
+# print(x)#NameError: name 'x' is not defined
+
+def my_fun():
+    print("Do i know the val ?",Val)
+val = 1
+my_fun()
+print(val)
