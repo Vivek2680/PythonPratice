@@ -78,12 +78,26 @@
 # num(5)
 # print("complete rec")
 
-def fact(x):
-    if x<=0:
-        return 1
-    else:
-        return x * fact(x-1)
-print(fact(5))
+# def fact(x):
+#     if x<=0:
+#         return 1
+#     else:
+#         return x * fact(x-1)
+# print(fact(5))
+
+def f(n):
+
+    if n == 0:
+        print("done")
+        return
+
+    print(n)
+
+    f(n-1)
+
+    print(n)
+
+f(3)
 
 
 

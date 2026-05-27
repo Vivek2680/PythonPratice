@@ -328,8 +328,9 @@
 # show ()
 # print(x)#NameError: name 'x' is not defined
 
-def my_fun():
-    print("Do i know the val ?",Val)
-val = 1
-my_fun()
-print(val)
+# def my_fun():
+#     print("Do i know the val ?",Val)
+# val = 1
+# my_fun()
+# print(val)
+
