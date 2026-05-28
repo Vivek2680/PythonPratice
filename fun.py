@@ -85,19 +85,19 @@
 #         return x * fact(x-1)
 # print(fact(5))
 
-def f(n):
+# def f(n):
 
-    if n == 0:
-        print("done")
-        return
+#     if n == 0:
+#         print("done")
+#         return
 
-    print(n)
+#     print(n)
 
-    f(n-1)
+#     f(n-1)
 
-    print(n)
+#     print(n)
 
-f(3)
+# f(3)
 
 
 
