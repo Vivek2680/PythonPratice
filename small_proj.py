@@ -21,4 +21,4 @@ for name,score in student_dict.items():
     for m in score:
         # print(mark)
         sum += m
-    print(name, "->",sum/len(score)) 
+    print(name, "->",sum/len(score))
