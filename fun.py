@@ -101,3 +101,22 @@
 
 
 
+# print(22/7)
+# f='a'
+# g='b'
+# h = "3"
+# print((f+g)*h)
+s = "hello world"
+# for ch in s:
+#     if ch in 'aeoiu':
+#         continue
+#     else:
+#         print(ch,end="")
+# print()
+# s[0] = 'H'#TypeError: 'str' object does not support item assignment
+# s = 'H' + s[1:len(s)]#new object
+# print(s)
+# print(s[10::-1])
+# verb = input("enter verb: ")
+# print(f"i can {verb}better than you")
+# print(4*f"{verb} "+verb)

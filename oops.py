@@ -16,18 +16,18 @@
 # fool.get_name()#call method
 # print(fool.name)#call prepert
 
-class Student:
-    def __init__(self, name,age):
-        self.name = name
-        self.age = age
+# class Student:
+#     def __init__(self, name,age):
+#         self.name = name
+#         self.age = age
     
-    def printdata(self):
-        print("Name",self.name)
-        print("Age",self.age)
+#     def printdata(self):
+#         print("Name",self.name)
+#         print("Age",self.age)
 
-vivek = Student("Vivek",20)
-print(vivek)
-vivek.printdata()
+# vivek = Student("Vivek",20)
+# print(vivek)
+# vivek.printdata()
 
 # def main ():
 #     user_input()
@@ -41,3 +41,86 @@ vivek.printdata()
 # if __name__ == "__main__":
 #     main()
 
+#--------------------------------------
+
+# class Ex():
+#     def __init__(self,val = 1):
+#         self.first = val
+#     def set_second(self,val):
+#         self.second = val
+# ex_obj_1 = Ex()
+# ex_obj_2 = Ex(2)
+# ex_obj_2.set_second(3)
+# ex_obj_3 = Ex(4)
+# ex_obj_3.third = 5#"."method/property add krna
+# print(ex_obj_1)
+# print(ex_obj_1.__dict__)
+# print(ex_obj_2.__dict__)
+# print(ex_obj_3.__dict__)
+
+#-------------------------------------
+
+# class Classy:
+#     def __init__(self,par1):
+#         self.par1 = par1
+#         print("This is constructor",par1)
+        # self.par2 = par2
+    # def method1(self,par):
+    #     print("This is method",par)
+# print(Classy.method1)
+# obj = Classy()
+# obj.method1(1)
+# Classy.method1(1,2)#instance method ko call krne ke liye pehle obj create krna pdta hai but class method ko direct class se call kr skte hai
+# Classy.__init__(2,'vivek')
+
+# class Star:
+#     def __init__(self,name,galaxy):
+#         self.name = name
+#         self.galaxy = galaxy
+#     def __str__(self):
+#         return f"Star name: {self.name}, Galaxy: {self.galaxy}"
+# # Star.__init__("Sun","Milky Way")
+# sun = Star("Sun","Milky Way")
+# print(sun)
+#------------------------------------------
+#
+# class Vehicle:
+#     pass
+# class LandVehicle(Vehicle):
+#     pass
+# class TrackedVehicle(LandVehicle):
+#     pass
+# for cls in (Vehicle, LandVehicle, TrackedVehicle):
+#     for parent in [Vehicle, LandVehicle, TrackedVehicle]:
+#         print(issubclass(cls, parent), end=' ')
+#     print()
+
+#-------------------------------------------
+
+# class Super:
+#     supVar = 1
+# class Sub(Super):
+#     subVar = 2
+# obj = Sub()
+# print(obj.supVar)
+# print(obj.subVar)
+
+#-------------------------------------------
+
+
+class Super:
+    def __init__(self):
+        self.supVar = 1
+class Sub(Super):
+    def __init__(self):
+        super().__init__()
+        self.subVar = 2
+class SubSub(Sub):
+    def __init__(self):
+        super().__init__()
+        self.subSubVar = 3
+
+obj = SubSub()
+print(obj.supVar)
+print(obj.subVar)
+print(obj.subSubVar)
