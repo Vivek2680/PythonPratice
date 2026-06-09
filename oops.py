@@ -212,8 +212,28 @@
 # n = int(input("Enter tha value of n: "))
 # print(reciprocal(n))
 
-try:
-    i = int("Hello")
-except Exception as e:
-    print(e)
-    print(e.__rept__())
+# try:
+#     i = int("Hello")
+# except Exception as e:
+#     print(e)
+#     print(e.__str__())
+
+# class MyZeroDivisionError(ZeroDivisionError):
+#     pass
+# def do_the_division(mine):
+#     if mine:
+#         raise MyZeroDivisionError("Some worse news")
+#     else:
+#         raise ZeroDivisionError("Some bad news")
+
+# # do_the_division(True)
+# do_the_division(False)
+
+# multiline ='''
+# line1
+# line2
+# '''
+# print(len(multiline))
+# # for ch in multiline:
+# #     print(ch,"->",ord(ch))
+# print(chr(10))
