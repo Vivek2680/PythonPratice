@@ -78,7 +78,7 @@
 #         self.name = name
 #         self.galaxy = galaxy
 #     def __str__(self):
-#         return f"Star name: {self.name}, Galaxy: {self.galaxy}"
+        # return f"Star name: {self.name}, Galaxy: {self.galaxy}"
 # # Star.__init__("Sun","Milky Way")
 # sun = Star("Sun","Milky Way")
 # print(sun)
@@ -108,19 +108,112 @@
 #-------------------------------------------
 
 
-class Super:
-    def __init__(self):
-        self.supVar = 1
-class Sub(Super):
-    def __init__(self):
-        super().__init__()
-        self.subVar = 2
-class SubSub(Sub):
-    def __init__(self):
-        super().__init__()
-        self.subSubVar = 3
+# class Super:
+#     def __init__(self):
+#         self.supVar = 1
+# class Sub(Super):
+#     def __init__(self):
+#         super().__init__()
+#         self.subVar = 2
+# class SubSub(Sub):
+#     def __init__(self):
+#         super().__init__()
+#         self.subSubVar = 3
 
-obj = SubSub()
-print(obj.supVar)
-print(obj.subVar)
-print(obj.subSubVar)
+# obj = SubSub()
+# print(obj.supVar)
+# print(obj.subVar)
+# print(obj.subSubVar)
+# print(int("20",4)) 
+
+# class Super:
+#     def __init__(self,name):
+#         self.name = name
+
+#     def __str__(self):
+#         return f"my name is {self.name}."
+# class sub (Super):
+#     def __init__(self, name):
+#         super().__init__(name)#super class ko access kar rha hai
+# obj = sub ("Vivek")
+# print(obj)
+
+# class SuperA:
+#     var_a = 10
+#     def fun_a(self):
+#         return 11
+# class SuperB:
+#     var_b = 20
+#     def fun_b(self):
+#         return 21
+# class Sub (SuperA,SuperB):
+#     pass
+
+# obj = Sub()
+# print(obj.var_a,obj.fun_a())
+# print(obj.var_b,obj.fun_b())
+
+# multilevel inheratice
+# class SuperA():
+#     var_a = 10
+#     def fun(self):
+#         return 11
+# class SuperB(SuperA):
+#     var_b = 20
+#     def fun(self):
+#         return 21
+# class Level3 (SuperB):
+#     pass
+
+# obj = Level3()
+# print(obj.fun(),obj.var_a)
+# # print(obj.var_b,obj.fun_b())
+
+# class Left():
+#     var = 'L'
+#     def fun(self):
+#         return f"Left"
+
+
+
+
+
+
+
+
+
+
+
+# class One():
+#     def do_it(self):
+#         print("do_it form one")
+#     def doanything(self):
+#         self.do_it()
+# class Two(One):
+#     def do_it(self):
+#         print("do it from Two")
+# one = One()
+# two = Two()
+# one.doanything()
+# two.doanything()
+
+# def reciprocal(n):
+#     try:
+#         n = 1/n
+#     except ZeroDivisionError:
+#         print("Division failed")
+#         return None
+#     else:
+#         print("Everything went fine")
+#         # return n
+#     finally:
+#         print("It's time to say goodbye")
+#         return n
+# n = int(input("Enter tha value of n: "))
+# print(reciprocal(n))
+
+try:
+    i = int("Hello")
+except Exception as e:
+    print(e)
+    print(e.__rept__())

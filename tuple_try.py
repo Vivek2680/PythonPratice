@@ -93,21 +93,21 @@
 
 # print(x)
 
-def process(data):
+# def process(data):
 
-    data.append(10)
+#     data.append(10)
 
-    data = data + [20]
+#     data = data + [20]
 
-    return data
+#     return data
 
-nums = [1]
+# nums = [1]
 
-result = process(nums)
+# result = process(nums)
 
-print(nums)
-print(result)
-print(nums is result)
+# print(nums)
+# print(result)
+# print(nums is result)
 
 # my_tuple = (1,10,100)
 # my_tuple += (1000,10000)
