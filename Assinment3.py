@@ -106,15 +106,78 @@
 # with open("data.txt","r") as f:
 #     data = f.read()
 # print(data)
-with open ('data.txt','w') as f:
-    f.write("leo,45,indore\n")
-    f.write("set,45,maihar\n")
+# with open ('data.txt','w') as f:
+#     f.write("leo,45,indore\n")
+#     f.write("set,45,maihar\n")
 
-# with open("data.txt","r") as f:
-#     data = f.read()
-# print(data)
-with open ('data.txt','r') as f:
-    for line in f:
-        name,mark,city = line.strip().split(',')
-        print(f'{name:<15} | {mark:>5} | {city}')
-        print("-----------------------------------")
+# # with open("data.txt","r") as f:
+# #     data = f.read()
+# # print(data)
+# with open ('data.txt','r') as f:
+#     for line in f:
+#         name,mark,city = line.strip().split(',')
+#         print(f'{name:<15} | {mark:>5} | {city}')
+#         print("-----------------------------------")
+# from typing import List
+# class Solution:
+#     def longestCommonPrefix(self, strs: List[str]) -> str:
+#        common = ''
+#        prefix = strs[0]
+#        for word in strs[1:]:
+#            while not word.startswith(prefix):
+#                 prefix = prefix[:-1]
+#                 if not prefix:
+#                   return ''
+#        return prefix
+# obj = Solution()
+# print(obj.longestCommonPrefix(["flower","flow","flight"]))
+
+# from typing import List
+# class Solution:
+#     def longestCommonPrefix(self, strs: List[str]) -> str:
+#         common = ''
+#         shortest_element = min(strs, key= len)
+#         if not strs:
+#             return common
+
+#         for idx, element in enumerate(shortest_element):
+#             '''
+#             here shortest element is flow and this for loop iterate through word 'flow'
+#             give us f, l, o, w
+#             '''
+#             # print(element)
+#             for ch in strs:
+#                 print(ch[0])
+#                 '''
+#                 here ch is element of list strs means flower, flow, flight
+#                 '''
+#                 # print(ch)
+#                 if ch[idx] != element:
+#                     '''
+#                     it compare letter of ch upto idx of element(flow) mean 0 to 3 index of ch if they are not same as "flow"
+#                     then return common otherwish continue
+#                     '''
+#                     return common
+#                 '''
+#                 add letter which are same only 
+#                 like flow and flower it will add f in 0th iteration then l in 1st iteration.....so on 
+#                 '''
+#             common += element
+#         return common
+# obj = Solution()
+# print(obj.longestCommonPrefix(["flower","flow","flight"]))
+
+# import csv
+# records = [
+#     ['Name','Marks','City','Grade'],
+#     ['Vivek',85,'Bhopal',"A"]
+# ]
+# with open ('student.csv','w',newline='') as f:
+#     csv.writer(f).writerows(records)
+
+# with open('student.csv','r') as f:
+#     for row in csv.DictReader(f):
+#         print(f'{row["Name"]}: {row["Marks"]} mark ({row["City"]})')
+# print(f"{'Hello':^20}")  # centers text in 20 characters
+print(f"| {'NAME':<6}: Vivek")
+print(f"{'|':>40}")
